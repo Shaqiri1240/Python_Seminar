@@ -17,7 +17,7 @@ d = int(input("Введите количество элементов: "))
 #
 # print(a_pro)
 def recursion(a1, n, d):
-    if d == 0:
+    if d == 1:
         return a1
     else:
         print(a1 - n + n, end = " ")
