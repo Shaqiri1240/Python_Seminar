@@ -10,10 +10,19 @@
 a1 = int(input("Введите первое число число: "))
 n = int(input("Введите разность: "))
 d = int(input("Введите количество элементов: "))
-a_pro = list()
-for i in range(d):
-    a_pro.append(a1)
-    a1 = a1 + n
+# a_pro = list()
+# for i in range(d):
+#     a_pro.append(a1)
+#     a1 = a1 + n
+#
+# print(a_pro)
+def recursion(a1, n, d):
+    if d == 0:
+        return a1
+    else:
+        print(a1 - n + n, end = " ")
+    return recursion(a1 + n, n, d-1)
 
-print(a_pro)
+print(recursion(a1, n, d))
+
 
